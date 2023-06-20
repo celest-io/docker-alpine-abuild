@@ -40,7 +40,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ env.REGISTRY }}/${{ github.repository_owner }}/docker-alpine-abuild
+          images: ${{ env.REGISTRY }}/${{ github.repository_owner }}/alpine-abuild
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
